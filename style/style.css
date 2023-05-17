@@ -1,0 +1,126 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(3, 1, 19);
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    background-color: black;
+    padding: 1em .5em;
+    margin: auto;
+}
+
+.header__logo {
+    text-transform: uppercase;
+    font-size: 2em;
+    margin-left: 1em;
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+}
+
+.menu__item a {
+    text-decoration: none;
+    color: white;
+    padding: .8em;
+    margin: 0;
+}
+
+.menu__item a:hover {
+    background-color: greenyellow;
+    color: black;
+    text-decoration: underline;
+    border-radius: 5px;
+}
+
+main {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 100%;
+  
+
+}
+
+main h1 {
+    text-transform: uppercase;
+    margin: 1em;
+    font-size: 3em;
+}
+
+.cards {
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+    width: 100%;
+justify-content: center;}
+
+.cards__item {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(20, 20, 27);
+    flex-basis: 200px;
+    height: 250px;
+    padding: 1em;
+}
+
+.cards__title {
+    text-transform: uppercase;
+    border-bottom: 1px solid greenyellow;
+    padding: .5em;
+}
+
+.cards__price {
+    font-size: .8em;
+    margin: 1em 0;
+}
+
+.cards__price strong {
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+
+.cards__list {
+    margin: 1em;
+    font-size: .8em;
+    list-style-type: circle;
+    flex-grow: 1;
+
+}
+
+.cards__list__item {
+    color: rgb(184, 214, 214);
+
+}
+
+.card__btn {
+    align-self: center;
+    justify-self: end;
+    width: 80%;
+    padding: .5em 1em;
+    background-color: greenyellow;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+
+}
+
+.card__btn:hover {
+    background-color: rgb(65, 81, 41);
+    text-decoration: underline;
+    cursor: pointer;
+
+}
