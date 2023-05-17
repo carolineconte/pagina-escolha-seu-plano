@@ -1,22 +1,28 @@
 * {
     padding: 0;
     margin: 0;
-
 }
 
 body {
-    background-color: rgb(3, 1, 19);
+    background-color: #0C1014;
     color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    height: 100%;
 }
+
+main h1 {
+    text-transform: uppercase;
+    text-align: center;
+    margin: 1em;
+    font-size: 3em;
+}
+
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 90%;
-    background-color: black;
+    background-color: #05080a;
     padding: 1em .5em;
     margin: auto;
 }
@@ -33,6 +39,7 @@ header {
     margin: 0;
 }
 
+.menu__item--active a,
 .menu__item a {
     text-decoration: none;
     color: white;
@@ -40,48 +47,39 @@ header {
     margin: 0;
 }
 
-.menu__item a:hover {
+.menu__item--active a {
     background-color: greenyellow;
     color: black;
-    text-decoration: underline;
     border-radius: 5px;
+    pointer-events: none;
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-
-}
-
-main h1 {
-    text-transform: uppercase;
-    margin: 1em;
-    font-size: 3em;
+.menu__item a:hover {
+    text-decoration: underline;
 }
 
 .plan {
     display: flex;
     gap: 1em;
     flex-wrap: wrap;
-    width: 100%;
-    justify-content: center;
+    width: 90%;
+    margin: auto;
 }
 
 .plan-card {
     display: flex;
+    flex: 1;
     flex-direction: column;
-    background-color: rgb(20, 20, 27);
-    flex-basis: 200px;
-    height: 250px;
-    padding: 1em;
+    background-color: #05080a;
+    
+    padding: 1em 2em;
 }
 
 .plan-card__title {
     text-transform: uppercase;
-    border-bottom: 1px solid greenyellow;
+    border-bottom: 2px solid greenyellow;
     padding: .5em;
+    letter-spacing: 2px;
 }
 
 .plan-card__price {
@@ -97,31 +95,33 @@ main h1 {
 .cards__list {
     margin: 1em;
     font-size: .8em;
-    list-style-type: circle;
     flex-grow: 1;
-
-}
-
-.cards__list li {
+    line-height: 1.5em;
     color: rgb(184, 214, 214);
 
 }
+
+.cards__list li::marker {
+    color: greenyellow;
+}
+
 
 .plan-card__cta {
     align-self: center;
     justify-self: end;
     width: 80%;
-    padding: .5em 1em;
+    padding: 1em;
     background-color: greenyellow;
     text-transform: uppercase;
     font-weight: bold;
     border: none;
     border-radius: 5px;
+    margin: 2em 1em 1em;
 
 }
 
 .plan-card__cta:hover {
-    background-color: rgb(65, 81, 41);
+    box-shadow: 0 0 10px yellowgreen;
     text-decoration: underline;
     cursor: pointer;
 
