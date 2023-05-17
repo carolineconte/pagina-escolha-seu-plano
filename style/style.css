@@ -1,12 +1,14 @@
 * {
     padding: 0;
     margin: 0;
+
 }
 
 body {
     background-color: rgb(3, 1, 19);
     color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 100%;
 }
 
 header {
@@ -25,7 +27,7 @@ header {
     margin-left: 1em;
 }
 
-.menu {
+.header-menu {
     list-style-type: none;
     display: flex;
     margin: 0;
@@ -46,11 +48,10 @@ header {
 }
 
 main {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   width: 100%;
-  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 
 }
 
@@ -60,14 +61,15 @@ main h1 {
     font-size: 3em;
 }
 
-.cards {
+.plan {
     display: flex;
     gap: 1em;
     flex-wrap: wrap;
     width: 100%;
-justify-content: center;}
+    justify-content: center;
+}
 
-.cards__item {
+.plan-card {
     display: flex;
     flex-direction: column;
     background-color: rgb(20, 20, 27);
@@ -76,18 +78,18 @@ justify-content: center;}
     padding: 1em;
 }
 
-.cards__title {
+.plan-card__title {
     text-transform: uppercase;
     border-bottom: 1px solid greenyellow;
     padding: .5em;
 }
 
-.cards__price {
+.plan-card__price {
     font-size: .8em;
     margin: 1em 0;
 }
 
-.cards__price strong {
+.plan-card__price span {
     text-transform: uppercase;
     font-size: 1.5em;
 }
@@ -100,12 +102,12 @@ justify-content: center;}
 
 }
 
-.cards__list__item {
+.cards__list li {
     color: rgb(184, 214, 214);
 
 }
 
-.card__btn {
+.plan-card__cta {
     align-self: center;
     justify-self: end;
     width: 80%;
@@ -118,7 +120,7 @@ justify-content: center;}
 
 }
 
-.card__btn:hover {
+.plan-card__cta:hover {
     background-color: rgb(65, 81, 41);
     text-decoration: underline;
     cursor: pointer;
